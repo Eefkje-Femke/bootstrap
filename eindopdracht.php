@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Eindopdracht bootstrap</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" type="image/png" href="images/sigma.png"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 		<!-- <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css"> -->
@@ -13,7 +14,10 @@
   <body>
 		<div class="navbar"><!--navbar-->
 		  <a href="#home">Home</a>
+			<a href="#carousel">Carousel</a>
+			<a href="#filter">Filterlist</a>
 		  <a href="#news">News</a>
+			<a href="#comment">Comments</a>
 		  <a href="#contact">Contact</a>
 		</div>
 		<div class="container">
@@ -24,48 +28,50 @@
 					<p><a class="btn btn-primary btn-lg" href="#" role="button">Contact</a></p><!--verwijzen naar form -->
 				</div>
 			</div>
-				<div id="slider">
-					<div id="carousel" class="carousel slide" data-ride="carousel">
-					  <!-- Indicators -->
-					  <ol class="carousel-indicators">
-					    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-					    <li data-target="#carousel" data-slide-to="1"></li>
-					    <li data-target="#carousel" data-slide-to="2"></li>
-					  </ol>
+		</div>
+			<div id="slider">
+				<div id="carousel" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel" data-slide-to="1"></li>
+				    <li data-target="#carousel" data-slide-to="2"></li>
+				  </ol>
 
-					  <!-- Wrapper for slides -->
-					  <div class="carousel-inner" role="listbox">
-					    <div class="item active">
-					      <img src="images/tiger.jpg" alt="tigers" class="slider-animal">
-					      <div class="carousel-caption">
-					        ...
-					      </div>
-					    </div>
-					    <div class="item">
-					      <img src="images/monkey.jpg" alt="monkeys" class="slider-animal">
-					      <div class="carousel-caption">
-					        ...
-					      </div>
-					    </div>
-							<div class="item">
-					      <img src="images/elephant.jpg" alt="elephant" class="slider-animal">
-					      <div class="carousel-caption">
-					        ...
-					      </div>
-					    </div>
-					  </div>
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active">
+				      <img src="images/tiger.jpg" alt="tigers" class="slider-animal">
+				      <div class="carousel-caption">
+				        ...
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="images/monkey.jpg" alt="monkeys" class="slider-animal">
+				      <div class="carousel-caption">
+				        ...
+				      </div>
+				    </div>
+						<div class="item">
+				      <img src="images/elephant.jpg" alt="elephant" class="slider-animal">
+				      <div class="carousel-caption">
+				        ...
+				      </div>
+				    </div>
+				  </div>
 
-					  <!-- Controls -->
-					  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					    <span class="sr-only">Previous</span>
-					  </a>
-					  <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					    <span class="sr-only">Next</span>
-					  </a>
-					</div>
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
 				</div>
+			</div>
+			<div class="container">
 				<div id="filterlist">
 					<h3>Filterlist</h3>
 					<p>Looking for new animal races? Or just curious if you know all of these? filter and find out!</p>
@@ -118,9 +124,8 @@
 									</tbody>
 							</table>
 						</div>
-					</div>
-
-				</div>
+					</div><!--.row-->
+				</div><!--#filterlist-->
 				<div id="news">
 					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 					  <div class="panel">
@@ -190,11 +195,109 @@
 					  </div>
 					</div>
 				</div>
-				<div id="opmerking">
-				</div>
-				<div id="form">
-				</div>
-		</div>
+			</div><!--#news-->
+			<div id="opmerking">
+				<h1>Comment section</h1>
+				<p>Here are some comments about the animal world and how we treat them.
+				<!-- Left-aligned media object -->
+				 <div class="media">
+					 <div class="media-left">
+						 <img src="https://www.w3schools.com/howto/img_avatar.png" class="media-object" style="width:60px">
+					 </div>
+					 <div class="media-body">
+						 <h4 class="media-heading">Ramira Bellomo</h4>
+						 <h6>Animal researcher</h6>
+						 <p>We can clearly see how fast the animals disappear. This has to stop! We should do something about it, before it's too late.</p>
+					 </div>
+				 </div>
+				 <hr>
+				 <!-- Right-aligned media object -->
+				  <div class="media">
+						<div class="media-left">
+				      <img src="https://www.w3schools.com/howto/img_avatar2.png" class="media-object" style="width:60px">
+				    </div>
+				    <div class="media-body">
+				      <h4 class="media-heading">Katarina Eddison</h4>
+							<h6>Girl, 11 years old</h6>
+				      <p>My favorite animal is the giraffe. I like those animals because they have a very long neck. But they're now slowly disappearing and I don't like that!</p>
+				    </div>
+				  </div>
+				<hr>
+				<!-- Left-aligned media object -->
+			 	<div class="media">
+				 	<div class="media-left">
+					 	<img src="https://www.w3schools.com/howto/img_avatar.png" class="media-object" style="width:60px">
+				 	</div>
+				 	<div class="media-body">
+					 	<h4 class="media-heading">Miriam Bristow</h4>
+					 	<h6>Climate researcher</h6>
+					 	<p>The world around us is changing. Our Environment is changing. If we don't take immediately action, it'll end up bad. And we end up being the only race living on earth.</p>
+				 	</div>
+			 	</div>
+			</div><!-- #opmerking-->
+			<div id="form">
+				<h1>Receive every week animal news</h1>
+				<p>Do you want to know more about the animal world? Are you curious about new animal species? Or do you want to broaden your horizon?
+					<br>Leave here your e-mailadress and we will send you weekly animal news!</p>
+				<form>
+					<div class="form-group col-sm-6 col-xs-12">
+						<label for="InputFirstName">First name</label>
+						<div class="tooltip"><!--tooltip test-->
+							<input type="text" class="form-control" id="InputFirstName" placeholder="Sarah">
+							<span class="tooltiptext">Use only letters</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-6 col-xs-12">
+						<label for="InputLastName">Last name</label>
+						<div class="tooltip"><!--tooltip test-->
+							<input type="email" class="form-control" id="InputLastName" placeholder="Eddison">
+							<span class="tooltiptext">Use only letters</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-6 col-xs-12">
+						<label for="InputAdress">Address</label>
+						<div class="tooltip"><!--tooltip test-->
+							<input type="text" class="form-control" id="InputAddress" placeholder="Snatchwood Court 95">
+							<span class="tooltiptext">Use only letters and numbers</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-6 col-xs-12">
+						<label for="InputPostal">Postal code</label>
+						<div class="tooltip"><!--tooltip test-->
+							<input type="text" class="form-control" id="InputPostal" placeholder="4537 UP">
+							<span class="tooltiptext">Use only capital letters and numbers</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-12 col-xs-12">
+						<label for="InputEmail">Email address</label>
+						<div class="tooltip"><!--tooltip test-->
+							<input type="email" class="form-control" id="InputEmail" placeholder="SarahEddison@hotmail.com">
+							<span class="tooltiptext">You may use letters, numbers and other characters</span>
+						</div>
+					</div>
+					<button type="button" class="btn btn-default" id="submitForm"	data-toggle="modal" data-target="#modal">Submit</button>
+				</form>
+				<!-- Modal -->
+				<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Are you sure the information is right?</h4>
+				      </div>
+				      <div class="modal-body">
+				        ...<!--informatie laten zien-->
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div><!--#modal-->
+			</div><!--#form-->
+			<div class="alert alert-danger" role="alert">You used the wrong characters, please follow the examples that are already in the input!</div>
+		</div><!--.container-->
     <!--js-->
 		<script src="/plugins/jquery.min.js"></script>
 		<script src="/plugins/bootstrap/js/bootstrap.min.js"></script>

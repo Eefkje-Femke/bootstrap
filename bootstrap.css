@@ -19,7 +19,7 @@ a:hover{
   top: 0;
   width: 100%;
   z-index: 1000;
-  border-radius: 0px 6px 6px 0px;
+  border-radius: 0px;
   margin-bottom: 0px;
 }
 
@@ -57,7 +57,7 @@ a:hover{
 
 .carousel-inner{
   width:100%;
-  max-height: 500px !important;
+  max-height: 600px !important;
 }
 
 /*filterlist*/
@@ -89,4 +89,56 @@ div.panel{
 
 .panel-title{
   color: white;
+}
+
+/*opmerking*/
+#opmerking{
+  background-color: #0D3F4F;
+  height: 450px;
+  padding: 2px 20px 0px 20px;
+  color:white;
+}
+
+
+/*form*/
+#form{
+  background-color: #0D3F4F;
+  height: 450px;
+  margin-top: 15px;
+  padding: 2px 20px 0px 20px;
+  color:white;
+}
+
+/*tooltip = info balkje wanneer je hover-t over de input*/
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
