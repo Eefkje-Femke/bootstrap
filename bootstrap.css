@@ -1,5 +1,92 @@
 body {
   background-size:cover;
   font-family: Open Sans,sans-serif;
+  margin-bottom: 30px;
+}
+
+a {
+  color: white;
+}
+
+a:hover{
+  color:black;
+}
+
+/*************navbar*******************/
+.navbar {
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-radius: 0px 6px 6px 0px;
+  margin-bottom: 0px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+/*jumbotron*/
+#jumbotron{
+  background-image: url("images/vogel.jpg");
+  background-size: cover;
+}
+
+.jumbotron{
+    background: rgba(255,255,255,0.3);
+}
+
+/*carousel*/
+.slider-animal {
+  width: 100%;
+}
+
+.carousel-inner{
+  width:100%;
+  max-height: 500px !important;
+}
+
+/*filterlist*/
+#filterlist{
+  margin-top: 30px;
+  height: 450px;
+  width: 100%;
+  background-color: #0D3F4F;
+  padding: 30px;
+  color:white;
+}
+
+#search{
+  margin-bottom: 10px;
+}
+
+/*new*/
+#news{
+  margin-top: 15px;
+}
+
+.badge {
+  margin-left: 5px;
+}
+
+div.panel{
+  background-color: #0D3F4F;
+}
+
+.panel-title{
   color: white;
 }
