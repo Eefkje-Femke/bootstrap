@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="bootstrap.css"><!--mijn css file-->
 	</head>
   <body>
-		<div class="container-fluid">
+		<div class="container-fluid col-xs-12">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
@@ -320,7 +320,7 @@
 							      </div>
 							      <div class="modal-footer">
 							        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							        <button type="button" class="btn btn-primary">Save changes</button>
+							        <button type="button" class="btn btn-primary" data-dismiss="modal" id="save">Save changes</button>
 							      </div>
 							    </div>
 							  </div>

@@ -1,17 +1,22 @@
 $( document ).ready(function() {
-  $("#myCarousel").carousel();
+  $("#myCarousel").carousel();//activate carousel
   $(".alert.alert-danger").hide();
 
   $("#search").on("keyup", function() {//filterlist
     var input = $(this).val().toLowerCase();//value of input
     $("#table tbody tr").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(input) > -1)//dit uitleggen
+      $(this).toggle($(this).text().toLowerCase().indexOf(input) > -1)
+      //veranderd input into lowercase. en daarna gaat het zoeken naar letters die matchen
     });
   });
 
   $('#InputFirstName, #InputLastName').on('keyup blur',function(){//Verwijderd alles Behalve A-Z
       var letter = $(this);
       letter.val(letter.val().replace(/[^a-zA-Z]/g,'') );
+    });
+
+    $( "#save" ).click(function() {//modal, save button
+      alert( "Your information is succesfully saved!" );
     });
 });
 

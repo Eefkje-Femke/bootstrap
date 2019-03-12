@@ -191,6 +191,12 @@ div.panel{
   opacity: 1;
 }
 
+/*modal*/
+.modal{
+  color: black;
+}
+
+
 /*footer*/
 #footer{
   height:50px;
