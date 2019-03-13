@@ -1,11 +1,12 @@
 $( document ).ready(function() {
-  $("#myCarousel").carousel();
+  $("#myCarousel").carousel();//activate carousel
   $(".alert.alert-danger").hide();
 
   $("#search").on("keyup", function() {//filterlist
     var input = $(this).val().toLowerCase();//value of input
     $("#table tbody tr").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(input) > -1)//dit uitleggen
+      $(this).toggle($(this).text().toLowerCase().indexOf(input) > -1)
+      //veranderd input into lowercase. en daarna gaat het zoeken naar letters die matchen
     });
   });
 
@@ -14,38 +15,9 @@ $( document ).ready(function() {
       letter.val(letter.val().replace(/[^a-zA-Z]/g,'') );
     });
 
-  var sections = $('section')
-  , nav = $('nav')
-  , nav_height = nav.outerHeight();
-
-  $(window).on('scroll', function () {
-    var cur_pos = $(this).scrollTop();
-
-    sections.each(function() {
-      var top = $(this).offset().top - nav_height,
-          bottom = top + $(this).outerHeight();
-
-      if (cur_pos >= top && cur_pos <= bottom) {
-        nav.find('a').removeClass('active');
-        sections.removeClass('active');
-
-        $(this).addClass('active');
-        nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-      }
+    $( "#save" ).click(function() {//modal, save button
+      alert( "Your information is succesfully saved!" );
     });
-  });
-
-  nav.find('a').on('click', function () {
-    var $el = $(this)
-      , id = $el.attr('href');
-
-    $('html, body').animate({
-      scrollTop: $(id).offset().top - nav_height
-    }, 500);
-
-    return false;
-  });
-
 });
 
 $(function() {

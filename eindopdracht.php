@@ -6,13 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" type="image/png" href="images/sigma.png"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-		<!-- <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css"> -->
 		<link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.css"><!--plugins-->
 		<link rel="stylesheet" href="bootstrap.css"><!--mijn css file-->
 	</head>
   <body>
-		<div class="container-fluid">
+		<div class="container-fluid col-xs-12">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
@@ -20,30 +18,30 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Project name</a>
+        <a class="navbar-brand" href="#">Bootstrap</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
         <ul class="nav navbar-nav">
-					<li class="active"><a href="#1">jumbotron</a></li>
-					<li><a href="#2">Carousel</a></li>
-					<li><a href="#3">Filterlist</a></li>
-					<li><a href="#4">News</a></li>
-					<li><a href="#5">Comments</a></li>
-					<li><a href="#6">Contact</a></li>
+					<li class="active"><a href="#sec1">jumbotron</a></li>
+					<li><a href="#sec2">Carousel</a></li>
+					<li><a href="#sec3">Filterlist</a></li>
+					<li><a href="#sec4">News</a></li>
+					<li><a href="#sec5">Comments</a></li>
+					<li><a href="#sec6">Contact</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
 		<div class="sections"><!--sections-->
 			<section id="sec1">
-				<div class="container">
+				<!-- <div class="container"> -->
 					<div id="jumbotron">
 						<div class="jumbotron">
 							<h1>Hello, world!</h1>
 							<p>This is my bootstrap website. If you have any questions, just contact me. Enjoy!</p>
-							<p><a class="btn btn-primary btn-lg" href="#" role="button">Contact</a></p><!--verwijzen naar form -->
+							<p><a class="btn btn-primary btn-lg" href="#sec6" role="button">Contact</a></p><!--verwijzen naar form -->
 						</div>
 					</div>
-				</div>
+				<!-- </div> -->
 			</section>
 			<section id="sec2">
 				<div id="slider"><!--carousel-->
@@ -267,7 +265,7 @@
 					<div class="container">
 						<div id="form">
 							<h1>Receive every week animal news</h1>
-							<p>Do you want to know more about the animal world? Are you curious about new animal species? Or do you want to broaden your horizon?
+							<p>Do you want to know more about the animal world? Are you curious about new animal species? Do you have questions? Or do you want to broaden your horizon?
 								<br>Leave here your e-mailadress and we will send you weekly animal news!</p>
 							<form>
 								<div class="form-group col-sm-6 col-xs-12">
@@ -320,7 +318,7 @@
 							      </div>
 							      <div class="modal-footer">
 							        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							        <button type="button" class="btn btn-primary">Save changes</button>
+							        <button type="button" class="btn btn-primary" data-dismiss="modal" id="save">Save changes</button>
 							      </div>
 							    </div>
 							  </div>
