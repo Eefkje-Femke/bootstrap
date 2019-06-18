@@ -9,6 +9,12 @@
 		<link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.css"><!--plugins-->
 		<link rel="stylesheet" href="bootstrap.css"><!--mijn css file-->
 	</head>
+	<!--
+	*Ik heb ook GitHub gebruikt bij deze opdracht.
+	*
+	*https://github.com/Eefkje-Femke/bootstrap
+	*
+	-->
   <body>
 		<div class="container-fluid col-xs-12">
       <div class="navbar-header">
